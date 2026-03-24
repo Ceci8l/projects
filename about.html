@@ -10,7 +10,7 @@
 
     <header>
         <nav class="container">
-        <div class="logo">Seçil Kalem</div>
+      <div class="logo"><h3>Seçil Kalem</h3></div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -41,6 +41,34 @@
     flex: 1; /* footer hariç kalan alanı kaplar */
   }
 
+  @media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description {
+    text-align: center;
+  }
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.profile-img {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.description {
+  max-width: 600px;
+  line-height: 1.6;
+}
+
 /* Footer */
 
 footer {
@@ -58,29 +86,31 @@ footer {
 
 <body>
 
+    <p></p>
+
  <main class="container">
-  <h3>About</h3>
 
-  
-<img src="images/me.jpg" alt="Secil Kalem"></div>
+<div class="about-container">
+  <img src="images/me.jpg" alt="Secil Kalem" class="profile-img">
+  <p></p>
   <p class="description">
-<br>I am a Product Designer with a rich and diverse background spanning digital product design, VR experiences, and art direction. </br>
+    I am a Product Designer with a rich and diverse background spanning digital product design, VR experiences, and art direction.
 
-<br>My journey has taken me from leading immersive VR UI/UX projects in London to shaping end-to-end digital products and brand ecosystems in Istanbul. 
-Working across mobile, web, and emerging technologies, I translate research insights and user behavior into refined interfaces, scalable design systems, 
-and intelligent product experiences that grow with users.</br>
+    <br><br>My journey has taken me from leading immersive VR UI/UX projects in London to shaping end-to-end digital products and brand ecosystems in Istanbul. 
+    Working across mobile, web, and emerging technologies, I translate research insights and user behavior into refined interfaces, scalable design systems, 
+    and intelligent product experiences that grow with users.
 
-<br>In addition to traditional product design, I actively explore genUI and AI-driven interaction models, researching and developing new user experiences 
-that integrate intelligent systems to enhance personalization, efficiency, and engagement. My deep appreciation for abstract expressionism and 
-art-driven design informs the visual language, interaction aesthetics, and emotional resonance of the products I craft.</br>
+    <br><br>In addition to traditional product design, I actively explore genUI and AI-driven interaction models, researching and developing new user experiences 
+    that integrate intelligent systems to enhance personalization, efficiency, and engagement. My deep appreciation for abstract expressionism and 
+    art-driven design informs the visual language, interaction aesthetics, and emotional resonance of the products I craft.
 
-<br>My time as a designer in London exposed me to fast-paced, collaborative environments that sharpened my strategic thinking, 
-cross-functional collaboration, and adaptive design skills. As a designer, I combine hands-on execution, strategic vision, 
-and a passion for experimentation—from concept to delivery—to create products that are functional, intuitive, and emotionally engaging. </br>
+    <br><br>My time as a designer in London exposed me to fast-paced, collaborative environments that sharpened my strategic thinking, 
+    cross-functional collaboration, and adaptive design skills. As a designer, I combine hands-on execution, strategic vision, 
+    and a passion for experimentation—from concept to delivery—to create products that are functional, intuitive, and emotionally engaging.
 
-<br>Every interaction I design is guided by the belief that it should feel meaningful, immersive, and resonant.</br>
-</p>
-
+    <br><br>Every interaction I design is guided by the belief that it should feel meaningful, immersive, and resonant.
+  </p>
+</div>
 
 </div>
 </main>
